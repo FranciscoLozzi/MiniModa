@@ -1,0 +1,67 @@
+/*  Layout Geral da Página de Produtos  */
+
+.pagina-produtos-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 10rem;
+}
+
+/*  Barra de Filtros (Esquerda)  */
+.barra-filtros {
+  flex: 0 0 280px; 
+}
+
+/*  Conteúdo Principal (Direita)  */
+.conteudo-principal-produtos {
+  flex: 1; 
+  width: 100%;
+}
+
+/*  Grade de Produtos (Dentro do Conteúdo Principal)  */
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+
+/*  Media Queries para Responsividade  */
+
+@media (max-width: 1024px) {
+  .grade-produtos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pagina-produtos-container {
+    flex-direction: column;
+  }
+  .grade-produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grade-produtos {
+    grid-template-columns: 1fr;
+  }
+}
+.card-produto {
+position: relative; 
+}
+
+/* Botão */
+.btn-favorito {
+position: absolute;
+top: 10px; 
+}
+
+.btn-favorito:hover {
+transform: scale(1.15);
+}
+
+.btn-favorito.favoritado {
+color: #e74c3c;
+}
