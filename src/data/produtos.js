@@ -1,6 +1,4 @@
 // src/Pages/produtos.js
-
-// Importamos TODAS as imagens de produtos aqui
 import masc1 from "../assets/masc1.png";
 import masc2 from "../assets/masc2.png";
 import masc3 from "../assets/masc3.png";
@@ -26,7 +24,7 @@ import tenis4 from "../assets/tenis4.png";
 import tenis5 from "../assets/tenis5.png";
 import tenis6 from "../assets/tenis6.png";
 
-// A palavra 'export' aqui é crucial para que outros arquivos possam usar esta lista
+
 export const produtosIniciais = [
   // --- Produtos Masculinos ---
   { id: 1, nome: 'Moletom com Capuz Simba', desc: 'Moletom flanelado bege com estampa do Simba.', preco: '69.99', img: masc1, vendidos: 50, favorito: false, promocao: true, dataPostagem: '2025-07-10', categoria: 'masculino' },
